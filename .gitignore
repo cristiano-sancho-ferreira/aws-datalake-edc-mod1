@@ -1,3 +1,3 @@
 Iac/.terraform/
-Iac/.terraform.lock.hcl
+Iac/.terraform.*
 Iac/terraform.*
