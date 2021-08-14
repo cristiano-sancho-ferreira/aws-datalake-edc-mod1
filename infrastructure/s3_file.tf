@@ -8,3 +8,10 @@ resource "aws_s3_bucket_object" "code_spark" {
     source = "../job_emr.py"
     etag = filemd5("../job_emr.py")    
 }
+
+
+resource "aws_s3_bucket_object" "code" {
+    bucket = aws_s3_bucket.datalake.id
+    key = "raw-data/enem/year=2019/"
+    acl = "private"    
+}
