@@ -1,5 +1,5 @@
 variable "base_bucket_name" {
-  default = "igti-edc-datalake-sancho2"
+  default = "igti-edc-mod1-datalake"
 }
 
 variable "ambiente" {
