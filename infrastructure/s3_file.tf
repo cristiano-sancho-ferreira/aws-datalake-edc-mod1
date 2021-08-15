@@ -9,9 +9,24 @@ resource "aws_s3_bucket_object" "code_spark" {
     etag = filemd5("../job_emr.py")    
 }
 
-
 resource "aws_s3_bucket_object" "code" {
     bucket = aws_s3_bucket.datalake.id
     key = "raw-data/enem/year=2019/"
     acl = "private"    
+}
+
+resource "aws_s3_bucket_object" "delta_spark_insert" {
+    bucket = aws_s3_bucket.datalake.id
+    key = "emr-code/pyspark/01_delta_spark_insert.py"
+    acl = "private"
+    source = "../01_delta_spark_insert.py"
+    etag = filemd5("../01_delta_spark_insert.py")    
+}
+
+resource "aws_s3_bucket_object" "delta_spark_upsert" {
+    bucket = aws_s3_bucket.datalake.id
+    key = "emr-code/pyspark/02_delta_spark_upsert.py"
+    acl = "private"
+    source = "../02_delta_spark_upsert.py"
+    etag = filemd5("../02_delta_spark_upsert.py")    
 }
