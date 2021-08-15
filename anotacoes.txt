@@ -1,2 +1,2 @@
 command-runner.jar
-spark-submmit --master yarn --deploy-mode s3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr.py
+spark-submit --deploy-mode cluster --master yarn s3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr.py

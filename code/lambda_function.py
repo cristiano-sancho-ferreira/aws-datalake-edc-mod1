@@ -111,6 +111,18 @@ def handler(event, context):
                                  's3://igti-edc-mod1-datalake/emr-code/pyspark/02_delta_spark_upsert.py'
                                  ]
                     }
+                },
+                {
+                    'Name': 'Create Table Enem in Parquet',
+                    'ActionOnFailure': 'CONTINUE',
+                    'HadoopJarStep': {
+                        'Jar': 'command-runner.jar',
+                        'Args': ['spark-submit',
+                                 '--master', 'yarn',
+                                 '--deploy-mode', 'cluster',
+                                 's3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr.py'
+                                 ]
+                    }
                 }],
             )
     
