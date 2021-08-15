@@ -14,7 +14,7 @@ enem = (
     .option("header", True)
     .option("inferSchema", True)
     .option("delimiter", ";")
-    .load("s3://igti-edc-datalake-sancho/raw-data/enem/")
+    .load("s3://igti-edc-mod1-datalake/raw-data/enem/")
 )
 
 
@@ -24,5 +24,5 @@ enem = (
     .mode("overwrite")
     .format("parquet")
     .partitionBy("year")
-    .save("s3://igti-edc-datalake-sancho/stage/enem/")
+    .save("s3://igti-edc-mod1-datalake/stage/enem/")
 )
