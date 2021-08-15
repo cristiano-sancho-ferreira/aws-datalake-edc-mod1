@@ -9,7 +9,7 @@ variable "region" {
 
 
 variable "lambda_function_name" {
-  default = "IGTIexecutaEMRaovivo"
+  default = "IGTIexecutaEMR"
 }
 
 variable "key_pair_name" {
