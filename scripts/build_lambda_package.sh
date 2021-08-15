@@ -1,5 +1,7 @@
 #!/usr/bin/env bash 
 
+set -x
+
 cd infrastructure
 
 # Declara variavel para reutilização nas validações do diretório
