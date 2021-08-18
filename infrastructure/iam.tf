@@ -134,9 +134,6 @@ resource "aws_iam_role_policy_attachment" "lambda_attach" {
 resource "aws_iam_role" "glue_role" {
   name = "IGTIGlueCrawlerRole"
 
-custom_group_policy_arns = [
-    "arn:aws:iam::aws:policy/AdministratorAccess",
-  ]
 
   assume_role_policy = <<EOF
 {
