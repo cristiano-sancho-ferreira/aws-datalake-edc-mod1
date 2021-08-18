@@ -39,7 +39,6 @@ resource "aws_lakeformation_permissions" "example" {
   permissions = ["CREATE_TABLE", "ALTER", "DROP"]
 
   database {
-    name       = aws_glue_catalog_database.example.name
-    catalog_id = var.glue_database
+    name       = var.glue_database
   }
 }
