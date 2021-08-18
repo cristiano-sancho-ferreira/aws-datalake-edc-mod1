@@ -1,9 +1,9 @@
 
-# Bootcamp IGTI: Engenheiro(a) de Dados Cloud
+# Bootcamp Engenheiro(a) de Dados Cloud
 
 
 
-## Módulo 1 -
+## Módulo 1
 ## Fundamentos em Arquitetura de Dados e Soluções em Nuvem
 
 
@@ -22,7 +22,7 @@ Exercitar os seguintes conceitos trabalhados no Módulo:
 
 
 
-## Atividades 1 - Pratica
+## Atividades 1 - Trabalho Pratica
 
 Você deverá desempenhar as seguintes atividades:
 1. Realizar o download dos MICRODADOS do ENEM 2019. O arquivo está disponível neste link: <https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados>
