@@ -33,3 +33,13 @@ resource "aws_glue_crawler" "igti-edc-mod1-censo-pqt" {
 resource "aws_glue_catalog_database" "aws_glue_database" {
   name = "glue_database"
 }
+
+resource "aws_lakeformation_permissions" "example" {
+  role        = aws_iam_role.glue_role.arn
+  permissions = ["CREATE_TABLE", "ALTER", "DROP"]
+
+  database {
+    name       = aws_glue_catalog_database.example.name
+    catalog_id = var.glue_database
+  }
+}

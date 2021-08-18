@@ -2,3 +2,21 @@ command-runner.jar
 spark-submit --deploy-mode cluster --master yarn s3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr.py
 
 Dados disponíveis em: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar.
+
+terraforma -help
+terraform --version
+terraform plan
+terraform validate
+terraform apply
+terraform output -json > output.json
+terraform destroy -force
+terraform state list
+terraform destroy -target="aws_s3_bucket_object.delta_spark_upsert"
+
+ variable "do_token" {
+  description = "Uma descricao bacana!"
+  type        = string
+}
+
+terraform apply -var-file terraform.tfvars
+
