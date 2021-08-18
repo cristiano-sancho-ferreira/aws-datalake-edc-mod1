@@ -151,8 +151,7 @@ resource "aws_iam_role" "glue_role" {
 EOF
 
   tags = {
-    IES = "IGTI"
-    CURSO = "EDC"
+    curso = "igti"
   }
 
 }
