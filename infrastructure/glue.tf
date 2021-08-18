@@ -22,7 +22,7 @@ resource "aws_glue_crawler" "igti-edc-mod1-censo-pqt" {
   database_name = var.glue_database
   name          = "igti-edc-mod1-censo-parquet-crawler"
   role          = aws_iam_role.glue_role.arn
-  table_prefix  = "pqt_"
+  table_prefix  = "tb_"
 
   s3_target {
     path = "s3://${aws_s3_bucket.datalake.id}/staging-zone/censo"
