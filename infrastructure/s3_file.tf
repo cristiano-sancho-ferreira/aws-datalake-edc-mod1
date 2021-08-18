@@ -11,10 +11,10 @@ resource "aws_s3_bucket_object" "code_spark" {
 
 resource "aws_s3_bucket_object" "code_spark_glue" {
     bucket = aws_s3_bucket.datalake.id
-    key = "emr-code/pyspark/job_emr.py"
+    key = "emr-code/pyspark/job_glue.py"
     acl = "private"
-    source = "../code/job_emr.py"
-    etag = filemd5("../code/job_glue.py")    
+    source = "../code/job_glue.py"
+    etag = filemd5("../code/job_glue.py")
 }
 
 resource "aws_s3_bucket_object" "code" {
