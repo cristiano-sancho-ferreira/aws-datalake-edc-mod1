@@ -27,12 +27,3 @@ resource "aws_glue_crawler" "igti-edc-mod1-censo-pqt" {
   }
 }
 
-
-resource "aws_lakeformation_data_lake_settings" "permission" {
-  admins = [aws_iam_role.glue_role.arn]
-
-  create_table_default_permissions {
-    permissions = ["ALL"]
-    principal   = aws_iam_role.glue_role.arn
-  }
-}
