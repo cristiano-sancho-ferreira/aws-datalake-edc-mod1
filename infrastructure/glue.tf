@@ -29,3 +29,7 @@ resource "aws_glue_crawler" "igti-edc-mod1-censo-pqt" {
   }
 }
 
+
+resource "aws_glue_catalog_database" "aws_glue_database" {
+  name = var.glue_database
+}
