@@ -8,7 +8,7 @@ resource "aws_glue_job" "job-igti" {
 }
 
 resource "aws_glue_crawler" "igti-edc-mod1-censo" {
-  database_name = aws_glue_catalog_database.igti_datalake.name
+  database_name = var.glue_database
   name          = "igti-edc-mod1-censo-raw-crawler"
   role          = aws_iam_role.glue_role.arn
 

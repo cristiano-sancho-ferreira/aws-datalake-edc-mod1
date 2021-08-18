@@ -23,3 +23,7 @@ variable "airflow_subnet_id" {
 variable "vpc_id" {
   default = "vpc-801addfd"
 }
+
+variable "glue_database" {
+  default = "igti_datalake"
+}
