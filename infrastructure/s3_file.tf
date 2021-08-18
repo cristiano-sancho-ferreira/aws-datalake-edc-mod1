@@ -3,18 +3,18 @@
 
 resource "aws_s3_bucket_object" "code_spark" {
     bucket = aws_s3_bucket.datalake.id
-    key = "emr-code/pyspark/job_emr.py"
+    key = "emr-code/pyspark/job_emr_igti_edc_censo.py"
     acl = "private"
-    source = "../code/job_emr.py"
-    etag = filemd5("../code/job_emr.py")    
+    source = "../code/job_emr_igti_edc_censo.py"
+    etag = filemd5("../code/job_emr_igti_edc_censo.py")    
 }
 
 resource "aws_s3_bucket_object" "code_spark_glue" {
     bucket = aws_s3_bucket.datalake.id
-    key = "emr-code/pyspark/job_glue.py"
+    key = "emr-code/pyspark/job_glue_igti_edc_censo.py"
     acl = "private"
-    source = "../code/job_glue.py"
-    etag = filemd5("../code/job_glue.py")
+    source = "../code/job_glue_igti_edc_censo.py"
+    etag = filemd5("../code/job_glue_igti_edc_censo.py")
 }
 
 resource "aws_s3_bucket_object" "code" {
