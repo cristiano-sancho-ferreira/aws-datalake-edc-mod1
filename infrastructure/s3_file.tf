@@ -3,10 +3,10 @@
 
 resource "aws_s3_bucket_object" "code_spark" {
     bucket = aws_s3_bucket.datalake.id
-    key = "emr-code/pyspark/job_emr_igti_edc_censo.py"
+    key = "emr-code/pyspark/job_emr_igti_edc_enem.py"
     acl = "private"
-    source = "../code/job_emr_igti_edc_censo.py"
-    etag = filemd5("../code/job_emr_igti_edc_censo.py")    
+    source = "../code/job_emr_igti_edc_enem.py"
+    etag = filemd5("../code/job_emr_igti_edc_enem.py")    
 }
 
 resource "aws_s3_bucket_object" "code_spark_glue" {
