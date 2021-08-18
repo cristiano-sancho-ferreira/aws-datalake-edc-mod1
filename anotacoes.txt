@@ -1,2 +1,4 @@
 command-runner.jar
 spark-submit --deploy-mode cluster --master yarn s3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr.py
+
+Dados disponíveis em: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar.
