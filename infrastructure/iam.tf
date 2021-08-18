@@ -134,6 +134,7 @@ resource "aws_iam_role_policy_attachment" "lambda_attach" {
 resource "aws_iam_role" "glue_role" {
   name = "IGTIGlueCrawlerRole"
 
+
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -182,6 +183,7 @@ resource "aws_iam_policy" "glue_policy" {
                 "ec2:DescribeSecurityGroups",
                 "ec2:DescribeSubnets",
                 "ec2:DescribeVpcAttribute",
+                "lakeformation:*",
                 "iam:ListRolePolicies",
                 "iam:GetRole",
                 "iam:GetRolePolicy",
@@ -245,6 +247,7 @@ resource "aws_iam_policy" "glue_policy" {
 }
 EOF
 }
+
 
 
 resource "aws_iam_role_policy_attachment" "glue_attach" {
