@@ -9,7 +9,7 @@ resource "aws_s3_bucket_object" "code_spark" {
     etag = filemd5("../code/job_emr.py")    
 }
 
-resource "aws_s3_bucket_object" "code_spark" {
+resource "aws_s3_bucket_object" "code_spark_glue" {
     bucket = aws_s3_bucket.datalake.id
     key = "emr-code/pyspark/job_emr.py"
     acl = "private"
