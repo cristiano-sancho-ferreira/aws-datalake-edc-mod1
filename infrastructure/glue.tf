@@ -31,7 +31,7 @@ resource "aws_glue_crawler" "igti-edc-mod1-censo-pqt" {
 
 
 resource "aws_glue_catalog_database" "aws_glue_database" {
-  name = "glue_database"
+  name = var.glue_database
 }
 
 resource "aws_lakeformation_permissions" "glue_lake_role" {
