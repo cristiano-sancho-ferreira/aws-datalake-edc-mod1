@@ -29,6 +29,18 @@ resource "aws_glue_crawler" "igti-edc-mod1-censo-pqt" {
   }
 }
 
+resource "aws_glue_crawler" "igti-edc-mod1-enem-pqt" {
+  database_name = var.glue_database
+  name          = "igti-edc-mod1-enem-parquet-crawler"
+  role          = aws_iam_role.glue_role.arn
+  table_prefix  = "tb_"
+
+  s3_target {
+    path = "s3://${aws_s3_bucket.datalake.id}/staging-zone/enem"
+  }
+}
+
+
 
 resource "aws_glue_catalog_database" "aws_glue_database" {
   name = var.glue_database
