@@ -39,6 +39,6 @@ resource "aws_lakeformation_permissions" "glue_lake_role" {
   permissions = ["ALL"]
 
   database {
-    name       = var.glue_database
+    name = var.glue_database
   }
 }
