@@ -13,6 +13,10 @@ terraform destroy -force
 terraform state list
 terraform destroy -target="aws_s3_bucket_object.delta_spark_upsert"
 
+terraform taint
+terraform fmt .
+
+
  variable "do_token" {
   description = "Uma descricao bacana!"
   type        = string
