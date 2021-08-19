@@ -25,7 +25,7 @@ from delta.tables import *
 logger.info("Produzindo novos dados...")
 enemnovo = (
     spark.read.format("delta")
-    .load("s3://igti-edc-mod1-datalake/staging-zone/enem")
+    .load("s3://igti-edc-mod1-datalake/staging-zone/enem-delta")
 )
 
 # Define algumas inscricoes (chaves) que serao alteradas
