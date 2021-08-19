@@ -40,24 +40,24 @@ docentes = (
 )
 
 # escola
-escola = (
+escolas = (
     spark
     .read
     .format("csv")
     .option("header", True)
     .option("inferSchema", True)
     .option("delimiter", "|")
-    .load("s3://igti-edc-mod1-datalake/raw-data/censo/escola/")
+    .load("s3://igti-edc-mod1-datalake/raw-data/censo/escolas/")
 )
 
 
 (
-    escola
+    escolas
     .write
     .mode("overwrite")
     .format("parquet")
     .partitionBy("nu_ano_censo")
-    .save("s3://igti-edc-mod1-datalake/staging-zone/censo/escola/")
+    .save("s3://igti-edc-mod1-datalake/staging-zone/censo/escolas/")
 )
 
 # gestor

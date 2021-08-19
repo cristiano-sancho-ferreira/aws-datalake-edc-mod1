@@ -1,3 +1,11 @@
+Censo
+- Subir os arquivos para o s3
+- Executar o Glue crawler do censo
+- Executar o Glue Job job-igti-edc-mod1-censo para criar o parquet
+
+
+
+
 command-runner.jar
 spark-submit --deploy-mode cluster --master yarn s3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr.py
 

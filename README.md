@@ -40,6 +40,9 @@ Você deverá desempenhar as seguintes atividades:
 7. Realizar consultas SQL no AWS Athena para responder às perguntas do trabalho prático.
 
 
+
+
+
 ## Atividades 2 -  Desafio
 
 1. Realizar a ingestão dos dados do Censo Escolar 2020 no AWS S3 ou outro storage de nuvem de sua escolha. Dados disponíveis em: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar. O método de ingestão é livre. Os dados devem ser ingeridos na zona raw ou zona crua ou zona bronze do seu Data Lake.
