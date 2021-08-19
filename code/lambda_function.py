@@ -120,7 +120,7 @@ def handler(event, context):
                         'Args': ['spark-submit',
                                  '--master', 'yarn',
                                  '--deploy-mode', 'cluster',
-                                 's3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr.py'
+                                 's3://igti-edc-mod1-datalake/emr-code/pyspark/job_emr_igti_edc_enem.py'
                                  ]
                     }
                 }],

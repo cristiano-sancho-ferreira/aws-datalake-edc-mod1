@@ -24,5 +24,5 @@ enem = (
     .mode("overwrite")
     .format("parquet")
     .partitionBy("year")
-    .save("s3://igti-edc-mod1-datalake/stage/enem/")
+    .save("s3://igti-edc-mod1-datalake/staging-zone/enem/")
 )
