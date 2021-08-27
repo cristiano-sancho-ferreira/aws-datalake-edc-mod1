@@ -1,5 +1,5 @@
 variable "base_bucket_name" {
-  default = "igti-edc-mod1-datalake"
+  default = "igti-edc-mod1-datalake2"
 }
 
 variable "region" {
