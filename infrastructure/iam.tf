@@ -171,6 +171,7 @@ resource "aws_iam_policy" "glue_policy" {
             "Effect": "Allow",
             "Action": [
                 "glue:*",
+                "glue:DeleteDatabase",
                 "s3:GetBucketLocation",
                 "s3:ListBucket",
                 "s3:ListAllMyBuckets",
