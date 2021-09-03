@@ -1,13 +1,8 @@
 
 # Bootcamp Engenheiro(a) de Dados Cloud
 
-
-
-## Módulo 1
 ## Fundamentos em Arquitetura de Dados e Soluções em Nuvem
 
-
-### Objetivos
 Exercitar os seguintes conceitos trabalhados no Módulo:
 
 ✓ Arquiteturas de Dados em Nuvem;
