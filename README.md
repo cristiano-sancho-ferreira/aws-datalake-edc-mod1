@@ -54,3 +54,7 @@ b. Validar a disponibilização no Athena.
 
 6. Quando o desenho da arquitetura estiver pronto, crie um repositório no Github (ou Gitlab, ou Bitbucket, ou outro de sua escolha) e coloque o código IaC para a implantação da infraestrutura. Nenhum recurso deve ser implantado manualmente.
 
+
+   ![image](https://github.com/user-attachments/assets/bd6c472e-901c-47f4-9b17-2f8acb57bbb9)
+
+
